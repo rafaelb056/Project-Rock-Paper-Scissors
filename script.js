@@ -28,7 +28,7 @@ return human
     function playGame(){
       let playerSelection = getHumanChoice();
       let computerSelection = getComputerChoice();
-      let result = playsSingleRound(playerSelection, computerSelection);
+      
     
       if (result.includes("win")) {
           playerWins++;

@@ -40,6 +40,13 @@ function playRound(humanChoice, computerChoice){
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-function playGame() {
-	playRound(humanChoice, computerChoice);
+function playGame(humanSelection, computerSelection) {
+	let result = playRound(humanChoice, computerChoice);
+	humanScore ;
+  computerScore ;
+	if(computerScore === 5){
+	
+	}hh
+	
+
 }

@@ -32,12 +32,11 @@ function playGame(){;
 	let computerScore = 0;
 
   for(let i=0; i<5; i++){
-
-		let  resultround =  playRound(getHumanChoice, getComputerChoice);
-		if(resultround.includes("You loses!")){
+	let  resultRound =  playRound(getHumanChoice, getComputerChoice);
+		if(resultRound.includes("You loses!")){
 			computerScore++;
 			console.log('Scores :' + humanScore + ' ' + computerScore  );
-		}else if(resultround.includes("You win!")){
+		}else if(resulRound.includes("You win!")){
 			humanScore++;
 			console.log('Scores : human ' + humanScore + '  computer ' + computerScore);
 		}else{

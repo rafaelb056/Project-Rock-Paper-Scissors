@@ -5,48 +5,53 @@ function getComputerChoice () {
 }
 
 function getHumanChoice(){
-	let selection = prompt("Choose Rock, Paper, or Scissor:")
+	let selection = prompt("Choose Rock, Paper, or Scissor:");
 	let human = selection.toLowerCase();
-	return human
+	return human;
 }
-
-let humanScore = 0;
-let computerScore = 0;
-
 function playRound(humanChoice, computerChoice){
 	if(humanChoice == computerChoice){
 		return "tie";
 	}else if(humanChoice == "rock" && computerChoice == "paper"){
-		computerScore ++;
 		return "You loses! paper beats rock";
 	}else if(humanChoice =="scissor" && computerChoice == "paper"){
-		humanScore++;
 		return "You win! scissor beats paper";
 	}else if(humanChoice =="rock" && computerChoice =="scissor"){
-		humanScore++;
 		return "You win! rock beats scissor";
 	}else if(humanChoice =="paper" && computerChoice =="rock"){
-		humanScore ++;
 		return "You win! paper beats rock";
 	}else if(humanChoice =="paper" && computerChoice =="scissor"){
-		computerScore ++;
 		return "You loses! scissor beats paper";
 	}else if(humanChoice =="scissor" && computerChoice =="rock"){
-		computerScore ++;
 		return "You loses! rock beats scissor";
 	}
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+function playGame(){;
+	let humanScore = 0;
+	let computerScore = 0;
+  for(let i=0; i<5; i++){
+		if(playRound(getHumanChoice(), getComputerChoice()).includes("You loses!")){
+			computerScore++;
+			console.log('Score :' + humanScore + ' ' + computerScore  );
+		}else if(playRound(getHumanChoice(), getComputerChoice()).includes("You win!")){
+			humanScore++;
+			console.log('Score :' + humanScore + ' ' + computerScore);
+		}else if(playRound(getHumanChoice(), getComputerChoice()).includes("tie")){
+			console.log('Score :' + humanScore + ' ' + computerScore);
+		}
+	}
 
-function playGame(humanSelection, computerSelection) {
-	let result = playRound(humanChoice, computerChoice);
-	humanScore ;
-  computerScore ;
-	if(computerScore === 5){
-	
-	}hh
-	
-
+	switch (a) {
+		case humanScore > computerScore:
+			alert( 'You win!' );
+			break;
+		case humanScore < computerScore:
+			alert( 'You lose' );
+			break;
+		case humanScore === computerScore:
+			alert( 'Tie' );
+			break;
+	}
 }
+getHumanChoice();

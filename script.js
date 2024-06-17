@@ -42,7 +42,7 @@ function playGame(){;
 		}
 	}
 
-	switch (a) {
+	switch (playGame()) {
 		case humanScore > computerScore:
 			alert( 'You win!' );
 			break;

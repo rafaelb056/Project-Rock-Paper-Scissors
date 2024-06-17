@@ -30,15 +30,18 @@ function playRound(humanChoice, computerChoice){
 function playGame(){;
 	let humanScore = 0;
 	let computerScore = 0;
+
   for(let i=0; i<5; i++){
-		if(playRound(getHumanChoice(), getComputerChoice()).includes("You loses!")){
+
+		let  resultround =  playRound(getHumanChoice, getComputerChoice);
+		if(resultround.includes("You loses!")){
 			computerScore++;
 			console.log('Scores :' + humanScore + ' ' + computerScore  );
-		}else if(playRound(getHumanChoice(), getComputerChoice()).includes("You win!")){
+		}else if(resultround.includes("You win!")){
 			humanScore++;
-			console.log('Scores :' + humanScore + ' ' + computerScore);
-		}else if(playRound(getHumanChoice(), getComputerChoice()).includes("tie")){
-			console.log('Scores :' + humanScore + ' ' + computerScore);
+			console.log('Scores : human ' + humanScore + '  computer ' + computerScore);
+		}else{
+			console.log('Scores : human' + humanScore + '  computer ' + computerScore);
 		}
 	}
 }

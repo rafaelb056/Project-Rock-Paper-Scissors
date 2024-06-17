@@ -45,11 +45,11 @@ function playGame(){;
 	}
 
 	if(humanScore > computerScore ){
-		alert("Congratulations you have won")
+		alert("Congratulations you have won Scores: human " + humanScore + " computer " + computerScore);
 	}else if(humanScore < computerScore){
-		alert("I'm sorry but you lost")
+		alert("I'm sorry but you lost Scores: human " + humanScore + " computer " + computerScore);
 	}else{
-		alert("It's a draw");
+		alert("It's a draw Scores: human " + humanScore + " computer " + computerScore );
 	}
 }
 playGame();

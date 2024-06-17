@@ -48,7 +48,8 @@ function playGame(){;
 		alert("Congratulations you have won")
 	}else if(humanScore < computerScore){
 		alert("I'm sorry but you lost")
-	}else
+	}else{
 		alert("It's a draw");
+	}
 }
 playGame();

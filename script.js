@@ -36,7 +36,7 @@ function playGame(){;
 		if(resultRound.includes("You loses!")){
 			computerScore++;
 			console.log('Scores :' + humanScore + ' ' + computerScore  );
-		}else if(resulRound.includes("You win!")){
+		}else if(resultRound.includes("You win!")){
 			humanScore++;
 			console.log('Scores : human ' + humanScore + '  computer ' + computerScore);
 		}else{

@@ -42,4 +42,4 @@ function playGame(){;
 		}
 	}
 }
-playGame()
+playGame();

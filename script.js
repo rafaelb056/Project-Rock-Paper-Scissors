@@ -42,16 +42,6 @@ function playGame(){;
 		}
 	}
 
-	switch (playGame()) {
-		case humanScore > computerScore:
-			alert( 'You win!' );
-			break;
-		case humanScore < computerScore:
-			alert( 'You lose' );
-			break;
-		case humanScore === computerScore:
-			alert( 'Tie' );
-			break;
-	}
+
 }
-getHumanChoice();
+playGame()

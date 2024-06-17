@@ -33,15 +33,13 @@ function playGame(){;
   for(let i=0; i<5; i++){
 		if(playRound(getHumanChoice(), getComputerChoice()).includes("You loses!")){
 			computerScore++;
-			console.log('Score :' + humanScore + ' ' + computerScore  );
+			console.log('Scores :' + humanScore + ' ' + computerScore  );
 		}else if(playRound(getHumanChoice(), getComputerChoice()).includes("You win!")){
 			humanScore++;
-			console.log('Score :' + humanScore + ' ' + computerScore);
+			console.log('Scores :' + humanScore + ' ' + computerScore);
 		}else if(playRound(getHumanChoice(), getComputerChoice()).includes("tie")){
-			console.log('Score :' + humanScore + ' ' + computerScore);
+			console.log('Scores :' + humanScore + ' ' + computerScore);
 		}
 	}
-
-
 }
 playGame()

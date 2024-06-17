@@ -31,16 +31,16 @@ function playGame(){;
 	let humanScore = 0;
 	let computerScore = 0;
 
-  for(let i=0; i<5; i++){
-	let  resultRound =  playRound(getHumanChoice, getComputerChoice);
+	for(let i=0; i<5; i++){
+		let  resultRound =  playRound(getHumanChoice(), getComputerChoice());
 		if(resultRound.includes("You loses!")){
 			computerScore++;
-			console.log('Scores :' + humanScore + ' ' + computerScore  );
+			console.log('You lose! Scores:'+ ' human  ' + humanScore + '  computer ' + computerScore  );
 		}else if(resultRound.includes("You win!")){
 			humanScore++;
-			console.log('Scores : human ' + humanScore + '  computer ' + computerScore);
+			console.log('You win! Scores:' + ' human ' + humanScore + '  computer ' + computerScore);
 		}else{
-			console.log('Scores : human' + humanScore + '  computer ' + computerScore);
+			console.log('You tie! Scores:' + ' human ' + humanScore + '  computer ' + computerScore);
 		}
 	}
 }

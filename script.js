@@ -43,5 +43,12 @@ function playGame(){;
 			console.log('You tie! Scores:' + ' human ' + humanScore + '  computer ' + computerScore);
 		}
 	}
+
+	if(humanScore > computerScore ){
+		alert("Congratulations you have won")
+	}else if(humanScore < computerScore){
+		alert("I'm sorry but you lost")
+	}else
+		alert("It's a draw");
 }
 playGame();

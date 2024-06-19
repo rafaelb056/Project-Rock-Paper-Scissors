@@ -2,11 +2,15 @@
 
 # Project Name
 
-Landing Page
+The game of rock, paper, scissors
+
+![Static Badge](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=F05032&logoSize=auto&labelColor=white) ![Static Badge](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=181717&logoSize=auto&labelColor=white) ![Static Badge](https://img.shields.io/badge/visual%20studio%20code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC&logoSize=auto&labelColor=white)   ![Static Badge](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=F7DF1E&logoSize=auto&labelColor=black)
+
+![screenshot](./app_screenshot.png)
 
 ![prepreviewor del projecto](<app_screenshot.png>)
 
-esto es un projecto de hacer flexbox
+This project about the game of rock, paper or scissors
 
 ## Built With
 

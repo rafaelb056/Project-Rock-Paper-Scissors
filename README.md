@@ -15,7 +15,7 @@ esto es un projecto de hacer flexbox
 
 ## Live Demo
 
-[Live Demo Link](https://rafaelb056.github.io/Landing_Page/)
+[Live Demo Link]( https://rafaelb056.github.io/Project-Rock-Paper-Scissors/)
 
 
 ## Getting Started
